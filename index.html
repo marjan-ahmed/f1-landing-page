@@ -17,20 +17,22 @@
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
-    <div class="logo">F1<span>RACING</span></div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#showcase">3D Cars</a></li>
-      <li><a href="#teams">Teams</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#subscribe">Subscribe</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="nav-inner">
+      <div class="logo">F1<span>RACING</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#showcase">3D Cars</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
 
   <!-- ===== HERO SECTION ===== -->
@@ -149,7 +151,7 @@
           <p>Dominant force in modern F1, combining relentless innovation with championship-winning talent.</p>
         </div>
         <div class="team-card-footer">
-          <span class="wins">🏆 6× Champions</span>
+          <span class="wins"><svg class="icon-trophy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> 6× Champions</span>
           <span class="points">Est. 2005</span>
         </div>
       </div>
@@ -170,7 +172,7 @@
           <p>The most iconic team in F1 history. The Prancing Horse has been racing since the very first championship.</p>
         </div>
         <div class="team-card-footer">
-          <span class="wins">🏆 16× Champions</span>
+          <span class="wins"><svg class="icon-trophy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> 16× Champions</span>
           <span class="points">Est. 1950</span>
         </div>
       </div>
@@ -191,7 +193,7 @@
           <p>The Silver Arrows dominated the turbo-hybrid era with unprecedented success and engineering excellence.</p>
         </div>
         <div class="team-card-footer">
-          <span class="wins">🏆 8× Champions</span>
+          <span class="wins"><svg class="icon-trophy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> 8× Champions</span>
           <span class="points">Est. 2010</span>
         </div>
       </div>
@@ -212,7 +214,7 @@
           <p>One of the most successful teams in F1, with a rich legacy of legendary drivers and engineering breakthroughs.</p>
         </div>
         <div class="team-card-footer">
-          <span class="wins">🏆 8× Champions</span>
+          <span class="wins"><svg class="icon-trophy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg> 8× Champions</span>
           <span class="points">Est. 1966</span>
         </div>
       </div>
@@ -240,19 +242,27 @@
         <p>From the streets of Monaco to the high-speed straights of Monza, every race weekend is a spectacle of speed, strategy, and human determination.</p>
         <div class="about-features">
           <div class="about-feature">
-            <div class="icon">⚡</div>
+            <div class="icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
             <span>Hybrid Power Units</span>
           </div>
           <div class="about-feature">
-            <div class="icon">🏁</div>
+            <div class="icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+            </div>
             <span>Global Championships</span>
           </div>
           <div class="about-feature">
-            <div class="icon">🔧</div>
+            <div class="icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
             <span>Cutting-edge Tech</span>
           </div>
           <div class="about-feature">
-            <div class="icon">🌍</div>
+            <div class="icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
             <span>Worldwide Circuits</span>
           </div>
         </div>
@@ -275,7 +285,9 @@
 
       <div class="schedule-item fade-in">
         <div class="schedule-round">RND 01</div>
-        <div class="schedule-flag">🇦🇺</div>
+        <div class="schedule-flag" aria-label="Australia">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none"><rect width="28" height="20" rx="2" fill="#00008B"/><rect width="14" height="10" fill="#00008B"/><path d="M0 0L14 10M14 0L0 10" stroke="#fff" stroke-width="2"/><path d="M0 0L14 10M14 0L0 10" stroke="#C8102E" stroke-width="1"/><path d="M7 0v10M0 5h14" stroke="#fff" stroke-width="3"/><path d="M7 0v10M0 5h14" stroke="#C8102E" stroke-width="1.5"/><circle cx="20" cy="7" r="1.2" fill="#fff"/><circle cx="23" cy="10" r="1" fill="#fff"/><circle cx="24" cy="5" r="1" fill="#fff"/><circle cx="20" cy="13" r="1" fill="#fff"/><circle cx="17" cy="15" r="1.2" fill="#fff"/></svg>
+        </div>
         <div class="schedule-details">
           <h4>Australian Grand Prix</h4>
           <p>Albert Park Circuit, Melbourne</p>
@@ -285,7 +297,9 @@
 
       <div class="schedule-item fade-in">
         <div class="schedule-round">RND 02</div>
-        <div class="schedule-flag">🇧🇭</div>
+        <div class="schedule-flag" aria-label="Bahrain">
+          <svg width="28" height="20" viewBox="0 0 28 20" rx="2" fill="none"><rect width="28" height="20" rx="2" fill="#CE1126"/><path d="M8 0L12 2L8 4L12 6L8 8L12 10L8 12L12 14L8 16L12 18L8 20H0V0z" fill="#fff"/></svg>
+        </div>
         <div class="schedule-details">
           <h4>Bahrain Grand Prix</h4>
           <p>Bahrain International Circuit, Sakhir</p>
@@ -295,7 +309,9 @@
 
       <div class="schedule-item fade-in">
         <div class="schedule-round">RND 03</div>
-        <div class="schedule-flag">🇨🇳</div>
+        <div class="schedule-flag" aria-label="China">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none"><rect width="28" height="20" rx="2" fill="#DE2910"/><circle cx="6" cy="6" r="3" fill="#FFDE00"/><circle cx="11" cy="3" r="1" fill="#FFDE00"/><circle cx="13" cy="5" r="1" fill="#FFDE00"/><circle cx="13" cy="8" r="1" fill="#FFDE00"/><circle cx="11" cy="10" r="1" fill="#FFDE00"/></svg>
+        </div>
         <div class="schedule-details">
           <h4>Chinese Grand Prix</h4>
           <p>Shanghai International Circuit</p>
@@ -305,7 +321,9 @@
 
       <div class="schedule-item fade-in">
         <div class="schedule-round">RND 04</div>
-        <div class="schedule-flag">🇯🇵</div>
+        <div class="schedule-flag" aria-label="Japan">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none"><rect width="28" height="20" rx="2" fill="#fff"/><circle cx="14" cy="10" r="5" fill="#BC002D"/></svg>
+        </div>
         <div class="schedule-details">
           <h4>Japanese Grand Prix</h4>
           <p>Suzuka International Racing Course</p>
@@ -315,7 +333,9 @@
 
       <div class="schedule-item fade-in">
         <div class="schedule-round">RND 05</div>
-        <div class="schedule-flag">🇺🇸</div>
+        <div class="schedule-flag" aria-label="United States">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none"><rect width="28" height="20" rx="2" fill="#B22234"/><path d="M0 1.5h28M0 4.5h28M0 7.5h28M0 10.5h28M0 13.5h28M0 16.5h28M0 19.5h28" stroke="#fff" stroke-width="1.5"/><rect width="11" height="10.5" fill="#3C3B6E"/><circle cx="2.5" cy="2" r="0.6" fill="#fff"/><circle cx="5.5" cy="2" r="0.6" fill="#fff"/><circle cx="8.5" cy="2" r="0.6" fill="#fff"/><circle cx="4" cy="4" r="0.6" fill="#fff"/><circle cx="7" cy="4" r="0.6" fill="#fff"/><circle cx="2.5" cy="6" r="0.6" fill="#fff"/><circle cx="5.5" cy="6" r="0.6" fill="#fff"/><circle cx="8.5" cy="6" r="0.6" fill="#fff"/><circle cx="4" cy="8" r="0.6" fill="#fff"/><circle cx="7" cy="8" r="0.6" fill="#fff"/></svg>
+        </div>
         <div class="schedule-details">
           <h4>Miami Grand Prix</h4>
           <p>Miami International Autodrome</p>
@@ -349,10 +369,18 @@
         <div class="logo">F1<span>RACING</span></div>
         <p>Your ultimate destination for Formula 1 racing news, team updates, and race calendars. Feel the speed.</p>
         <div class="social-links">
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="YouTube">▶</a>
-          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter / X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
         </div>
       </div>
       <div class="footer-links">
@@ -385,7 +413,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 F1Racing. All rights reserved.</p>
-      <p>Made with ❤️ for motorsport fans</p>
+      <p>Made with <svg class="icon-heart" width="14" height="14" viewBox="0 0 24 24" fill="var(--primary)" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> for motorsport fans</p>
     </div>
   </footer>
 

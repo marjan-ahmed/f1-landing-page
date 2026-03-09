@@ -69,24 +69,29 @@ img {
 /* ===== NAVIGATION ===== */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
   z-index: 1000;
-  padding: 1.2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 12px;
   background: rgba(5, 5, 5, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(225, 6, 0, 0.08);
-  transition: background 0.4s ease, border-color 0.4s ease;
+  border: 1px solid rgba(225, 6, 0, 0.08);
+  transition: background 0.4s ease, border-color 0.4s ease, top 0.4s ease;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .navbar.scrolled {
   background: rgba(5, 5, 5, 0.97);
-  border-bottom-color: rgba(225, 6, 0, 0.15);
+  border-color: rgba(225, 6, 0, 0.15);
+  top: 0.5rem;
 }
 
 .navbar .logo {
@@ -626,6 +631,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.04);
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
+  cursor: pointer;
 }
 
 .team-card:hover {
@@ -812,6 +818,7 @@ img {
   background: rgba(225, 6, 0, 0.03);
   border: 1px solid rgba(225, 6, 0, 0.06);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .about-feature:hover {
@@ -827,8 +834,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
   flex-shrink: 0;
+  color: var(--primary);
 }
 
 .about-feature span {
@@ -856,6 +863,7 @@ img {
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .schedule-item::before {
@@ -891,8 +899,11 @@ img {
 }
 
 .schedule-flag {
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 1.5rem;
+  flex-shrink: 0;
 }
 
 .schedule-details {
@@ -1053,7 +1064,7 @@ img {
   justify-content: center;
   color: var(--text-dim);
   transition: all 0.3s ease;
-  font-size: 0.85rem;
+  cursor: pointer;
 }
 
 .social-links a:hover {
@@ -1105,6 +1116,74 @@ img {
   font-weight: 300;
 }
 
+/* ===== SVG ICON STYLING ===== */
+.icon-trophy {
+  color: var(--accent-gold);
+  vertical-align: -2px;
+}
+
+.icon-heart {
+  vertical-align: -2px;
+  display: inline-block;
+}
+
+/* ===== FOCUS STATES (ACCESSIBILITY) ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.team-card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.schedule-item:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero h1 .line-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-desc {
+    opacity: 1;
+  }
+
+  .hero-buttons {
+    opacity: 1;
+  }
+
+  .scroll-indicator {
+    opacity: 1;
+  }
+}
+
 /* ===== ANIMATIONS ===== */
 .fade-in {
   opacity: 0;
@@ -1141,7 +1220,13 @@ img {
   }
 
   .navbar {
-    padding: 1rem 2rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .nav-inner {
+    padding: 0.8rem 1.5rem;
   }
 
   .section {
@@ -1153,16 +1238,17 @@ img {
   .nav-links {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     left: 0;
-    width: 100%;
+    right: 0;
     background: rgba(5, 5, 5, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     gap: 1.5rem;
-    border-bottom: 1px solid rgba(225, 6, 0, 0.1);
+    border: 1px solid rgba(225, 6, 0, 0.1);
+    border-radius: 12px;
   }
 
   .nav-links.active {
@@ -1251,7 +1337,13 @@ img {
   }
 
   .navbar {
-    padding: 1rem 1.5rem;
+    top: 0.25rem;
+    left: 0.25rem;
+    right: 0.25rem;
+  }
+
+  .nav-inner {
+    padding: 0.75rem 1rem;
   }
 
   .section {
