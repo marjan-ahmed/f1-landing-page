@@ -224,7 +224,10 @@ function createF1Car(bodyColor, accentColor) {
 
 function initThreeJS() {
   var canvas = document.getElementById('f1Canvas');
-  if (!canvas) return;
+  if (!canvas) {
+    console.warn('F1 3D Showcase: Canvas element #f1Canvas not found.');
+    return;
+  }
 
   var wrapper = canvas.parentElement;
   var width = wrapper.clientWidth;
@@ -401,6 +404,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize Three.js
   if (typeof THREE !== 'undefined') {
     initThreeJS();
+  } else {
+    console.warn('F1 3D Showcase: Three.js library not loaded. 3D car models will not be displayed.');
+    var canvasWrapper = document.querySelector('.showcase-canvas-wrapper');
+    if (canvasWrapper) {
+      var fallback = document.createElement('div');
+      fallback.style.cssText = 'display:flex;align-items:center;justify-content:center;height:300px;color:#777;font-family:var(--font-heading);font-size:0.9rem;letter-spacing:2px;text-transform:uppercase;';
+      fallback.textContent = '3D Experience requires WebGL';
+      var canvas = document.getElementById('f1Canvas');
+      if (canvas) canvas.style.display = 'none';
+      canvasWrapper.insertBefore(fallback, canvasWrapper.firstChild);
+    }
   }
 
   // Car switcher buttons
@@ -461,9 +475,23 @@ function handleSubscribe(event) {
   event.preventDefault();
   var input = event.target.querySelector('input[type="email"]');
   if (input && input.value) {
-    alert(
-      "Thanks for subscribing! You'll receive F1 updates at " + input.value
-    );
+    var email = input.value;
     input.value = '';
+
+    // Show inline success toast
+    var existing = document.querySelector('.subscribe-toast');
+    if (existing) existing.remove();
+
+    var toast = document.createElement('div');
+    toast.className = 'subscribe-toast';
+    toast.textContent = 'Subscribed! F1 updates will be sent to ' + email;
+    toast.style.cssText = 'margin-top:1.2rem;padding:0.8rem 1.5rem;background:rgba(225,6,0,0.12);border:1px solid rgba(225,6,0,0.25);border-radius:4px;color:#f0f0f0;font-size:0.85rem;font-family:var(--font-heading);letter-spacing:1px;animation:fadeIn 0.4s ease-out;';
+    event.target.parentNode.appendChild(toast);
+
+    setTimeout(function () {
+      toast.style.opacity = '0';
+      toast.style.transition = 'opacity 0.4s ease';
+      setTimeout(function () { toast.remove(); }, 400);
+    }, 4000);
   }
 }
