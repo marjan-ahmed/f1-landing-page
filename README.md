@@ -30,6 +30,18 @@ open index.html
 
 No build tools, bundlers, or package managers required.
 
+## Deployment
+
+This site is automatically deployed to GitHub Pages on every push to `main` via GitHub Actions.
+
+**To enable GitHub Pages:**
+
+1. Go to your repository **Settings → Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Push to the `main` branch — the workflow will deploy automatically
+
+You can also trigger a deploy manually from the **Actions** tab using the "Run workflow" button.
+
 ## Tech Stack
 
 - HTML5
