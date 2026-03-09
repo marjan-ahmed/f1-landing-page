@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Racing — Feel the Speed</title>
+  <meta name="description" content="Experience the thrill of Formula 1 racing. Discover teams, drivers, and the world's most prestigious motorsport championship.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">F1<span>Racing</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#teams">Teams</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#subscribe">Subscribe</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="speed-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">2025 Season</div>
+      <h1>The Pinnacle of <span class="highlight">Motorsport</span></h1>
+      <p>Where engineering perfection meets raw human courage. Experience Formula 1 — the fastest, most technologically advanced racing series on the planet.</p>
+      <div class="hero-buttons">
+        <a href="#teams" class="btn btn-primary">Explore Teams</a>
+        <a href="#schedule" class="btn btn-outline">Race Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item fade-in">
+        <div class="stat-number">370+</div>
+        <div class="stat-label">KM/H Top Speed</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">Horsepower</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">24</div>
+        <div class="stat-label">Race Weekends</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">10</div>
+        <div class="stat-label">Teams</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAMS SECTION ===== -->
+  <section class="section" id="teams">
+    <div class="section-header fade-in">
+      <div class="tag">Championship Contenders</div>
+      <h2>Legendary Teams</h2>
+      <p>Meet the powerhouses of Formula 1 — teams that push the boundaries of speed, technology, and human performance.</p>
+    </div>
+    <div class="teams-grid">
+
+      <div class="team-card fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&h=400&fit=crop"
+          alt="Red Bull Racing car on track"
+          class="team-card-image"
+        >
+        <div class="team-card-body">
+          <h3>Red Bull Racing</h3>
+          <div class="team-driver">Max Verstappen</div>
+          <p>Dominant force in modern F1, combining relentless innovation with championship-winning talent.</p>
+        </div>
+        <div class="team-card-footer">
+          <span class="wins">🏆 6x Champions</span>
+          <span class="points">Est. 2005</span>
+        </div>
+      </div>
+
+      <div class="team-card fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop"
+          alt="Ferrari racing car"
+          class="team-card-image"
+        >
+        <div class="team-card-body">
+          <h3>Scuderia Ferrari</h3>
+          <div class="team-driver">Charles Leclerc</div>
+          <p>The most iconic team in F1 history. The Prancing Horse has been racing since the very first championship.</p>
+        </div>
+        <div class="team-card-footer">
+          <span class="wins">🏆 16x Champions</span>
+          <span class="points">Est. 1950</span>
+        </div>
+      </div>
+
+      <div class="team-card fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&h=400&fit=crop"
+          alt="Mercedes F1 car"
+          class="team-card-image"
+        >
+        <div class="team-card-body">
+          <h3>Mercedes-AMG</h3>
+          <div class="team-driver">Lewis Hamilton Legacy</div>
+          <p>The Silver Arrows dominated the turbo-hybrid era with unprecedented success and engineering excellence.</p>
+        </div>
+        <div class="team-card-footer">
+          <span class="wins">🏆 8x Champions</span>
+          <span class="points">Est. 2010</span>
+        </div>
+      </div>
+
+      <div class="team-card fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=400&fit=crop"
+          alt="McLaren racing"
+          class="team-card-image"
+        >
+        <div class="team-card-body">
+          <h3>McLaren Racing</h3>
+          <div class="team-driver">Lando Norris</div>
+          <p>One of the most successful teams in F1, with a rich legacy of legendary drivers and engineering breakthroughs.</p>
+        </div>
+        <div class="team-card-footer">
+          <span class="wins">🏆 8x Champions</span>
+          <span class="points">Est. 1966</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="about-container">
+      <div class="about-image-wrapper fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=700&h=500&fit=crop"
+          alt="Formula 1 racing action shot"
+        >
+      </div>
+      <div class="about-text fade-in">
+        <h2>Experience the <span>Thrill</span> of Formula 1</h2>
+        <p>Formula 1 is the highest class of international racing for open-wheel single-seater formula racing cars. With cutting-edge technology, world-class drivers, and circuits spanning the globe, F1 delivers unmatched excitement.</p>
+        <p>From the streets of Monaco to the high-speed straights of Monza, every race weekend is a spectacle of speed, strategy, and human determination.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">⚡</div>
+            <span>Hybrid Power Units</span>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🏁</div>
+            <span>Global Championships</span>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🔧</div>
+            <span>Cutting-edge Tech</span>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🌍</div>
+            <span>Worldwide Circuits</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE SECTION ===== -->
+  <section class="section" id="schedule">
+    <div class="section-header fade-in">
+      <div class="tag">Race Calendar</div>
+      <h2>Upcoming Races</h2>
+      <p>Catch all the action from circuits around the world. Here are the next races on the calendar.</p>
+    </div>
+    <div class="schedule-list">
+
+      <div class="schedule-item fade-in">
+        <div class="schedule-round">Round 1</div>
+        <div class="schedule-flag">🇦🇺</div>
+        <div class="schedule-details">
+          <h4>Australian Grand Prix</h4>
+          <p>Albert Park Circuit, Melbourne</p>
+        </div>
+        <div class="schedule-date">Mar 14–16</div>
+      </div>
+
+      <div class="schedule-item fade-in">
+        <div class="schedule-round">Round 2</div>
+        <div class="schedule-flag">🇧🇭</div>
+        <div class="schedule-details">
+          <h4>Bahrain Grand Prix</h4>
+          <p>Bahrain International Circuit, Sakhir</p>
+        </div>
+        <div class="schedule-date">Mar 28–30</div>
+      </div>
+
+      <div class="schedule-item fade-in">
+        <div class="schedule-round">Round 3</div>
+        <div class="schedule-flag">🇨🇳</div>
+        <div class="schedule-details">
+          <h4>Chinese Grand Prix</h4>
+          <p>Shanghai International Circuit</p>
+        </div>
+        <div class="schedule-date">Apr 11–13</div>
+      </div>
+
+      <div class="schedule-item fade-in">
+        <div class="schedule-round">Round 4</div>
+        <div class="schedule-flag">🇯🇵</div>
+        <div class="schedule-details">
+          <h4>Japanese Grand Prix</h4>
+          <p>Suzuka International Racing Course</p>
+        </div>
+        <div class="schedule-date">Apr 25–27</div>
+      </div>
+
+      <div class="schedule-item fade-in">
+        <div class="schedule-round">Round 5</div>
+        <div class="schedule-flag">🇺🇸</div>
+        <div class="schedule-details">
+          <h4>Miami Grand Prix</h4>
+          <p>Miami International Autodrome</p>
+        </div>
+        <div class="schedule-date">May 2–4</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA / SUBSCRIBE SECTION ===== -->
+  <section class="section cta-section" id="subscribe">
+    <div class="cta-content fade-in">
+      <h2>Never Miss a <span style="color: var(--primary)">Race</span></h2>
+      <p>Subscribe to get the latest F1 news, race results, and exclusive behind-the-scenes content delivered straight to your inbox.</p>
+      <form class="cta-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="Enter your email" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">F1<span>Racing</span></div>
+        <p>Your ultimate destination for Formula 1 racing news, team updates, and race calendars. Feel the speed.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#about">About F1</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Racing</h4>
+        <ul>
+          <li><a href="#">Standings</a></li>
+          <li><a href="#">Results</a></li>
+          <li><a href="#">Circuits</a></li>
+          <li><a href="#">Drivers</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 F1Racing. All rights reserved.</p>
+      <p>Made with ❤️ for motorsport fans</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Scroll fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Subscribe form handler
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const input = event.target.querySelector('input[type="email"]');
+      if (input && input.value) {
+        alert('Thanks for subscribing! You\'ll receive F1 updates at ' + input.value);
+        input.value = '';
+      }
+    }
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(15, 15, 15, 0.9)';
+      }
+    });
+  </script>
+
+</body>
+</html>
